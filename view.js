@@ -48,7 +48,7 @@ class View {
     }
 
     renderImgList(selectedMemData) {
-        this.memImgNode.innerHTML = `<img class="image" src="${selectedMemData.selectMemUrl}" alt="${selectedMemData.selectMemName}>
+        this.memImgNode.innerHTML = `<img class="image" src="${selectedMemData.selectMemUrl}" alt="${selectedMemData.selectMemName}">
                                     <div id="text-top" class="text-top"></div>
                                     <div id="text-bottom" class="text-bottom"></div>`
         
@@ -78,4 +78,5 @@ class View {
 }
 
     
+
 
