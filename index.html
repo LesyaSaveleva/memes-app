@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memes App</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <div class="settings">
+            <h2 class="settings__title">НАСТРОЙКИ:</h2>
+            <div class="settings__control">
+
+                <div class="settings__select">
+                    <label  for="select-mem" class="settings__label">Мем</label><br>
+                    <select id="select-mem" class="settings__input">
+
+                    </select>
+                </div>
+                <div class="settings__select">
+                    <label  for="top-text" class="settings__label">Текст сверху</label><br>
+                    <input id="top-text" class="settings__input" type="text">
+                </div>
+                <div class="settings__select">
+                    <label  for="bottom-text" class="settings__label">Текст снизу</label><br>
+                    <input id="bottom-text" class="settings__input" type="text">
+                </div>
+            </div>
+
+        </div>
+        <div class="preview">
+            <h2 class="preview__title">ПРЕВЬЮ:</h2>
+                <div id="memes-img" class="memes-img">
+                </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script src="model.js"></script>
+    <script src="view.js"></script>
+    <script src="api.js"></script>
+    <script src="controller.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
